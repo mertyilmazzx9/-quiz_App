@@ -1,0 +1,127 @@
+*{
+    background-color: beige;
+}
+
+
+h1{
+    border-style: solid;
+    border-color:rgb(119, 12, 141);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(119, 12, 141);
+    color: whitesmoke;
+    margin-top: 5%;
+    padding: 10px;
+
+}
+.board{
+    border-style: solid;
+    border-color: rgb(102, 100, 100);
+    border-radius: 25px;
+    width: 15%;
+    min-height: 30%;
+    background-color: rgb(211, 209, 209);
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    color: rgb(59, 59, 58);
+    font-weight: bold;
+
+}
+.board p{
+    display: inline;
+    margin: 6%; 
+    background-color: rgb(211, 209, 209);
+    line-height: 25px;
+    padding:5px;
+    border-radius: 15px 3px;
+    
+    
+}
+
+h3{
+    margin: 5%;
+    background-color: rgb(211, 209, 209);
+}
+.cevapla1{
+    position: absolute;
+    left: 25%;
+    top: 40.6%;
+    margin-top: 3%;
+    background-color: rgb(189, 189, 188);
+    border-radius: 10%;
+}
+
+.secenek{
+    margin-top: 2%;
+}
+
+.secenek input[type="radio"] {
+    margin-right: 10px;
+}
+
+button{
+    background-color: rgb(189, 189, 188);
+    border-radius: 10%;
+}
+h3 span{
+    background-color: rgb(211, 209, 209);
+}
+#gezinme-paneli{
+    position: absolute;
+    left: 0.5%;
+    top:47%
+}
+
+
+.soruyaz{
+    margin-top: 150px;    
+}
+.soruyaz h2{
+    background-color: #7e5497;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(233, 225, 225);
+}
+.soruyaz label{
+    display: inline-block;
+    width: 125px;
+}
+.soruyaz button{
+    position: absolute;
+    top: 92%;
+}
+
+.soruyaz #soruEkleBtn{
+    left: 0.5%;
+}
+.soruyaz #soruGuncelleBtn{
+    left: 6%;
+    
+}
+/* Sınav sonuç sayfası stilleri */
+#sonuc {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sonuc-tablosu {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.sonuc-tablosu th,
+.sonuc-tablosu td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.sonuc-tablosu th {
+    background-color: #4caf50;
+    color: #fff;
+}

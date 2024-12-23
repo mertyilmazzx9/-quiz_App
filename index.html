@@ -1,0 +1,99 @@
+
+<!--
+    
+    Mert Yılmaz - 394773
+    İlayda Kantemir - 394808
+    
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Sınav Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Interaktif Sınav Uygulaması</h1>
+    
+    <div id="soru-alani">
+        <span id="soru_sayisii"></span>
+        <span>-</span>
+        <span id="soru-metni" style="font-weight: 900;"></span>
+        <form>
+            <label>
+                <input class="secenek" type="radio" id="cevap1" name="cevap" value="0" required> A)
+                <span id="secenek1"></span>
+            </label>
+            <br>
+            <label>
+                <input class="secenek" type="radio" id="cevap2" name="cevap" value="1"> B)
+                <span id="secenek2"></span>
+            </label>
+            <input class="cevapla1" type="submit" value="Cevapla">
+        </form>
+    </div>
+
+    <div class="board">
+
+        <h3>Süre: <span id="saniye"></span></h3>
+        <h3>Soru: <span id="soru-sayisi"></span> / <span id="toplam-soru-sayisi"></span> </h3>
+        <h3>Puan: <span id="puan"></span></h3>
+        <p id="q0">1</p>
+        <p id="q1">2</p>
+        <p id="q2">3</p>
+        <p id="q3">4</p>
+        <p id="q4">5</p>
+        <p id="q5">6</p>
+        <p id="q6">7</p>
+        <p id="q7">8</p>
+        <p id="q8">9</p>
+        <p id="q9">10</p>
+        <p id="q10">11</p>
+        <p id="q11">12</p>
+        <p id="q12">13</p>
+        <p id="q13">14</p>
+        <p id="q14">15</p>
+
+    </div>
+
+
+    <div id="gezinme-paneli">   
+        <button id="onceki-soru">Önceki Soru</button>
+        <button id="sonraki-soru">Sonraki Soru</button>
+    </div>
+
+    
+    <div class="soruyaz">
+        <form >
+            <h2 >Soru Ekleme Ve Güncelleme</h2>
+            <label>Soruyu Girin:</label>
+            <input type="text" id="soruMetniInput"><br>
+            <label>Seçenekleri Girin:</label>
+            <input type="text" id="A_sıkkı">
+            <input type="text" id="B_sıkkı"><br>
+    
+            <label>Cevap:</label>
+            <select id="cevapSelect">
+                <option value="0">A</option>
+                <option value="1">B</option>
+            </select>
+    
+            <button type="button" id="soruEkleBtn">Soru Ekle</button>
+            <button type="button" id="soruGuncelleBtn" onclick="soruGuncelleme()" >Soru Güncelle</button>
+        </form>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
